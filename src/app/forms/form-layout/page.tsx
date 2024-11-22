@@ -2,7 +2,6 @@ import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import SelectGroupOne from "@/components/FormElements/SelectGroup/SelectGroupOne";
 import Link from "next/link";
 import InputGroup from "@/components/FormElements/InputGroup";
 
@@ -58,7 +57,7 @@ const FormLayout = () => {
                   customClasses="mb-4.5"
                 />
 
-                <SelectGroupOne />
+                
 
                 <div className="mb-6">
                   <label className="mb-3 block text-body-sm font-medium text-dark dark:text-white">
