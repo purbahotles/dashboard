@@ -23,11 +23,12 @@ const config: Config = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        primary: "#5750F1",
+        primary: "#17A9E2",
         stroke: "#E6EBF1",
         "stroke-dark": "#27303E",
         dark: {
           DEFAULT: "#111928",
+          1: "#000000",
           2: "#1F2A37",
           3: "#374151",
           4: "#4B5563",
@@ -74,11 +75,11 @@ const config: Config = {
           },
         },
         blue: {
-          DEFAULT: "#3C50E0",
+          DEFAULT: "#17A9E2",
           dark: "#1C3FB7",
           light: {
             DEFAULT: "#5475E5",
-            2: "#8099EC",
+            2: "#17A9E2",
             3: "#ADBCF2",
             4: "#C3CEF6",
             5: "#E1E8FF",

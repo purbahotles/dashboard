@@ -109,7 +109,8 @@
 }
 
 .apexcharts-datalabels-group .apexcharts-datalabel-label {
-    @apply !fill-dark-5 dark:!fill-dark-6;
+    @apply !fill-dark-1 dark:!fill-dark-6;
+    @apply !flex !items-center !justify-center !text-center !fill-dark-1 dark:!fill-dark-6;
 }
 
 .apexcharts-datalabels-group .apexcharts-datalabel-value {
@@ -453,6 +454,10 @@ span.flatpickr-weekday,
 
 input[type="search"]::-webkit-search-cancel-button {
     @apply appearance-none;
+}
+
+.small-icon {
+    font-size: 12px;
 }
 
 .custom-input-date::-webkit-calendar-picker-indicator {

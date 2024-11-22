@@ -3,10 +3,12 @@ import React, { useState } from "react";
 const SearchForm = () => {
   return (
     <>
-      <li className="hidden lg:block">
-        <form action="https://formbold.com/s/unique_form_id" method="POST">
-          <div className="relative w-full max-w-[300px]">
-            <button className="absolute left-5 top-1/2 -translate-y-1/2 text-dark hover:text-primary dark:text-dark-6 dark:hover:text-primary">
+      <li className="lg:block">
+        <form action="#" method="#">
+          <div className="relative w-full">
+            
+
+            <button className="absolute right-5 top-1/2 -translate-y-1/2 text-dark hover:text-primary dark:text-dark-6 dark:hover:text-primary">
               <svg
                 className="fill-current"
                 width="18"
@@ -30,11 +32,10 @@ const SearchForm = () => {
                 </defs>
               </svg>
             </button>
-
             <input
               type="text"
               placeholder="Search"
-              className="w-full rounded-full border border-stroke bg-gray-2 py-3 pl-13.5 pr-5 text-dark focus:border-primary focus:outline-none dark:border-dark-4 dark:bg-dark-3 dark:text-white dark:focus:border-primary xl:w-[300px]"
+              className="w-full rounded-md border border-stroke bg-white py-3 pr-13.5 pl-5 text-dark focus:border-primary focus:outline-none dark:border-dark-4 dark:bg-dark-3 dark:text-white dark:focus:border-primary"
             />
           </div>
         </form>

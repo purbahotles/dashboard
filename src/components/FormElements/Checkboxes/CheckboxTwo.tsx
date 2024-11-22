@@ -43,7 +43,7 @@ const CheckboxTwo = () => {
             </span>
           </div>
         </div>
-        Checkbox Text
+        {/* Checkbox Text */}
       </label>
     </div>
   );

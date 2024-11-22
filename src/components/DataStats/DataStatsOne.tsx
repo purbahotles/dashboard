@@ -4,182 +4,93 @@ import { dataStats } from "@/types/dataStats";
 const dataStatsList = [
   {
     icon: (
-      <svg
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.5626 13.0002C10.5626 11.654 11.6539 10.5627 13.0001 10.5627C14.3463 10.5627 15.4376 11.654 15.4376 13.0002C15.4376 14.3464 14.3463 15.4377 13.0001 15.4377C11.6539 15.4377 10.5626 14.3464 10.5626 13.0002Z"
-          fill="white"
-        />
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M2.16675 13.0002C2.16675 14.7762 2.62713 15.3743 3.54788 16.5705C5.38638 18.959 8.4697 21.6668 13.0001 21.6668C17.5305 21.6668 20.6138 18.959 22.4523 16.5705C23.373 15.3743 23.8334 14.7762 23.8334 13.0002C23.8334 11.2242 23.373 10.6261 22.4523 9.42985C20.6138 7.04135 17.5305 4.3335 13.0001 4.3335C8.4697 4.3335 5.38638 7.04135 3.54788 9.42985C2.62713 10.6261 2.16675 11.2242 2.16675 13.0002ZM13.0001 8.93766C10.7564 8.93766 8.93758 10.7565 8.93758 13.0002C8.93758 15.2438 10.7564 17.0627 13.0001 17.0627C15.2437 17.0627 17.0626 15.2438 17.0626 13.0002C17.0626 10.7565 15.2437 8.93766 13.0001 8.93766Z"
-          fill="white"
-        />
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <rect x="0.352966" y="0.352936" width="44.9976" height="44.9976" fill="url(#pattern0_6757_11588)"/>
+        <defs>
+        <pattern id="pattern0_6757_11588" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlinkHref="#image0_6757_11588" transform="scale(0.015625)"/>
+        </pattern>
+        <image id="image0_6757_11588" width="64" height="64" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMUlEQVR4nO2WzU4UQRDHywNc5KRsF4hPsNGj+gZ6MZwI70DkLQiJN+TI1US2qhNO+gzKYYGQkMCB4FZxIB5MiJ+cHNLrR2YGlx10Z3emqV/SySTd09317/pXN4BhGIZhGIZhdEHWZBQNqgKaAGoZgGYBLd2blbUaDqk4mQBsGZBcawsMCxOALQMSswAPoQY0/d44el10LJuO5UtoyPIOWZ+FPojZArfX5Q6ybveqvI51a3KjMw0xCtAMJ39J8H9EIG3DWnsMYhMAvS4WvYMbXhYgNgEcy2Yu3V/f8joTWvjOzEfy9qrr/+9Dp/wMIPmcHh8C/903s3F8NyfApwgF0NP0+BB0bwH0ND4BuHvVXbBACN6RvonfAr54EQxvAhgypQsAa+0xZNntGzzJTpTXYOBnusvHXsGHvnRxjEqABukTR3LQLwMc6X6jJY8hGgGS5AaSLiPJj8I1oDtWlqIogo70+T9vlHS51gI4L7P5k3es35F1Bb0+xJcnN7stfJO++NWXzYRW52ktBWj6vXHH+j7rbxEkvddrTuf1vmPRXE04+tutUHkBkGX+wslfEnxGBNKz9L9TvjMHJTNwARxLKzdmpehmHOlqzgqvoHYCkB5lTpH0QeHNrB8/ys1/CPUTQL6l+xv+w0TRzYSxudrxFUqmlFugTpgAbBmQmAV4oO8AvdJDZNBU4CGk10sAjKyZAP3ACpySZQCP0AL9KH2Biq8Po97AqNc3DMMwDMMwIBLOAW5XnXVpwXWOAAAAAElFTkSuQmCC"/>
+        </defs>
       </svg>
     ),
-    color: "#3FD97F",
-    title: "Total Views",
-    value: "3.456K",
-    growthRate: 0.43,
+    color: "#E2F0FF",
+    title: "CONTACT",
+    value: "51",
   },
   {
     icon: (
-      <svg
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M13 23.8332C18.983 23.8332 23.8333 18.9829 23.8333 12.9998C23.8333 7.01675 18.983 2.1665 13 2.1665C7.01687 2.1665 2.16663 7.01675 2.16663 12.9998C2.16663 18.9829 7.01687 23.8332 13 23.8332ZM13.8125 6.49984C13.8125 6.05111 13.4487 5.68734 13 5.68734C12.5512 5.68734 12.1875 6.05111 12.1875 6.49984V6.84297C10.4212 7.15923 8.93746 8.48625 8.93746 10.2915C8.93746 12.3684 10.9013 13.8123 13 13.8123C14.4912 13.8123 15.4375 14.7935 15.4375 15.7082C15.4375 16.6228 14.4912 17.604 13 17.604C11.5088 17.604 10.5625 16.6228 10.5625 15.7082C10.5625 15.2594 10.1987 14.8957 9.74996 14.8957C9.30123 14.8957 8.93746 15.2594 8.93746 15.7082C8.93746 17.5134 10.4212 18.8404 12.1875 19.1567V19.4998C12.1875 19.9486 12.5512 20.3123 13 20.3123C13.4487 20.3123 13.8125 19.9486 13.8125 19.4998V19.1567C15.5788 18.8404 17.0625 17.5134 17.0625 15.7082C17.0625 13.6313 15.0986 12.1873 13 12.1873C11.5088 12.1873 10.5625 11.2061 10.5625 10.2915C10.5625 9.37688 11.5088 8.39567 13 8.39567C14.4912 8.39567 15.4375 9.37688 15.4375 10.2915C15.4375 10.7402 15.8012 11.104 16.25 11.104C16.6987 11.104 17.0625 10.7402 17.0625 10.2915C17.0625 8.48625 15.5788 7.15923 13.8125 6.84297V6.49984Z"
-          fill="white"
-        />
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <rect x="0.352936" y="0.352936" width="44.9976" height="44.9976" fill="url(#pattern0_6757_11598)"/>
+        <defs>
+        <pattern id="pattern0_6757_11598" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlinkHref="#image0_6757_11598" transform="scale(0.015625)"/>
+        </pattern>
+        <image id="image0_6757_11598" width="64" height="64" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVR4nO2YQY7CMBAE/Qqa36HltE+jn2V/YwWDxN5gtYBEPEOoknxIDolVseOeaQ0AAOBh5BFTxqH/bN137WMF+CLhtHH/bh8rwAUlaLaAahJ0Nbmln19OgrIEVJGg6QL68Y/r/avfW1fAYXzdSMhcCZos4HKvkgQlCCglQUkCykhQooASEpR5DP47+nFK7aCyAn4LqFfP570ELDCfGxDgycbvsLoV8CwIMCsg2ALmHxD8BM0pEByDJgfE+oLHHcgBJgcEOcDkgCAHmBwQ5ACTA6ItjQhCgyQoovCgFhDF0KAaFOXwoB/QkqEfYPoBQT/A9AMirR+gYgMBS6MCX5kV4MQtAAAAbT2cAcCNbw6bLt/+AAAAAElFTkSuQmCC"/>
+        </defs>
       </svg>
     ),
-    color: "#FF9C55",
-    title: "Total Profit",
-    value: "$42.2K",
-    growthRate: 4.35,
+    color: "#E2F0FF",
+    title: "LOAN",
+    value: "56",
   },
   {
     icon: (
-      <svg
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M19.0425 4.80065L16.8758 3.66364C14.9739 2.66555 14.0229 2.1665 13 2.1665C11.977 2.1665 11.026 2.66555 9.12411 3.66363L6.95744 4.80065C5.03588 5.80904 3.90635 6.40179 3.20629 7.1946L13 12.0914L22.7936 7.1946C22.0936 6.40179 20.964 5.80904 19.0425 4.80065Z"
-          fill="white"
-        />
-        <path
-          d="M23.5607 8.62788L13.8125 13.502V23.7292C14.5902 23.5355 15.4751 23.0711 16.8758 22.336L19.0425 21.199C21.3734 19.9758 22.5389 19.3642 23.1861 18.2651C23.8333 17.1661 23.8333 15.7984 23.8333 13.0632V12.9365C23.8333 10.8861 23.8333 9.60421 23.5607 8.62788Z"
-          fill="white"
-        />
-        <path
-          d="M12.1875 23.7292V13.502L2.43923 8.62788C2.16663 9.60421 2.16663 10.8861 2.16663 12.9365V13.0632C2.16663 15.7984 2.16663 17.1661 2.81381 18.2651C3.46099 19.3642 4.62647 19.9758 6.95744 21.199L9.12411 22.336C10.5248 23.0711 11.4097 23.5355 12.1875 23.7292Z"
-          fill="white"
-        />
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <rect x="0.352997" y="0.352997" width="44.9976" height="44.9976" fill="url(#pattern0_6757_11606)"/>
+        <defs>
+        <pattern id="pattern0_6757_11606" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlinkHref="#image0_6757_11606" transform="scale(0.015625)"/>
+        </pattern>
+        <image id="image0_6757_11606" width="64" height="64" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADgklEQVR4nO2ZPWhUQRDHByH4Wd7Nvohg4Vep4kfsRK01inaC1oLWgils/EibCEoqJcS7fQ+1iGBloa0EtUsMxmT2zo+olbEwKRKZVLcjSe75MrfvjveDhSO3y/xn3u68vX8ACgoKCgoKWsPQWFeUzFwwMY2gdeMY029jaY4/89/Ktnae50AnglXqNZYmTeyWVh2WJjGhM9Ax3FzagNbdXTNxvwiLGLs7vBbaHUybvFcIdxs6YNsvNiaF1v1B6wZMpdZjhr9uXR6VWg/GNMjfyZ1gLJ2GtmRorOufM2+pXra1/SstKSf1AzzH3wn0oS0bY7Tc7f0nv1ryjUWQO2H57dBumJhGRAEGml2Llu6JXjAM7QZamvCSSNzR5tfWjonijUO7YSzNeds4md3W7FqeK3rHL2g3jHiltXp9cEynFgAtzf73xUZ/fGtBAZx/WcnRYG2qye9I3ObQSa41dj6c3qRWAKxMmdAJrrkLKlNGrQClan2vv+VoYqW5UljaWM2ul/eN0pPaHtAiqtBhrwAxvcmaQNb1rKFxXndCh9LGahqTzJwUwl6GLgBr8Oba2gnQAq076wejZ1kTyLqeNXi7skq9oEUU02W/B7hHWRPIup41NM4rW7qUNlbTGOuuiR4wmIMeMOjNTdxV0AIT6vOPgLsFgWEN4qHcUAuG1vX7T4auQ2BYgziW/XrBrHvgnbeErkBgWIPYlffVghlLj0W1L0JgWIPYlSN6wWL3XLwGgzu2rMHvAW5ULRjG9LoxWJS44xAY1iCu56/UgpmY3nv37sr0QQgMaxC78p1aMLTuk9cEq7QLAsMaRBOcUguGln76R+BLGQLDGsQ94IdaMLRuvjHY7heTGyEwrEG8meZb4gahtv2UwaZTcYVQuEFo6TvkBNai7gqVhBtkYvcRcgJrUXeFIuEGmdi9hZzAWtRdISPcINULR0pYi7orhMINUr1ypoS1qLtCkXCDVH90ZPxXvIorZIQbpPqzMyWsRd0VQuEGqRoPGY0aFVcIZZCE+iAntOThGOEG8ZGAnNCS42mEG8RNEXJCSxo0CjcIE3cOcgJrUX9Fo3CDsDpzCnICa1G/pBnhBkXWHYGcwFrUXSEUbtD2pL4PcgJrUXeFULhBeR4qrpCJ3ULoxFKMhXVNvnv085YcJJVqsIO1bgUoPZ3pDp1Q2lFOpqN1K0BBQUFBAXQmfwFRT2U+0Vz3lwAAAABJRU5ErkJggg=="/>
+        </defs>
       </svg>
     ),
-    color: "#8155FF",
-    title: "Total Product",
-    value: "2.450",
-    growthRate: 2.59,
+    color: "#E2F0FF",
+    title: "PRODUCT",
+    value: "80",
   },
   {
     icon: (
-      <svg
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <ellipse
-          cx="9.75106"
-          cy="6.49984"
-          rx="4.33333"
-          ry="4.33333"
-          fill="white"
-        />
-        <ellipse
-          cx="9.75106"
-          cy="18.4178"
-          rx="7.58333"
-          ry="4.33333"
-          fill="white"
-        />
-        <path
-          d="M22.7496 18.4173C22.7496 20.2123 20.5445 21.6673 17.8521 21.6673C18.6453 20.8003 19.1907 19.712 19.1907 18.4189C19.1907 17.1242 18.644 16.0349 17.8493 15.1674C20.5417 15.1674 22.7496 16.6224 22.7496 18.4173Z"
-          fill="white"
-        />
-        <path
-          d="M19.4996 6.50098C19.4996 8.2959 18.0446 9.75098 16.2496 9.75098C15.8582 9.75098 15.483 9.68179 15.1355 9.55498C15.648 8.65355 15.9407 7.61084 15.9407 6.49977C15.9407 5.38952 15.6484 4.34753 15.1366 3.44656C15.4838 3.32001 15.8587 3.25098 16.2496 3.25098C18.0446 3.25098 19.4996 4.70605 19.4996 6.50098Z"
-          fill="white"
-        />
+      <svg width="30" height="30" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <rect x="0.352936" y="0.352936" width="44.9976" height="44.9976" fill="url(#pattern0_6757_11616)" />
+        <defs>
+          <pattern id="pattern0_6757_11616" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlinkHref="#image0_6757_11616" transform="scale(0.015625)" />
+          </pattern>
+          <image id="image0_6757_11616" width="64" height="64" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8UlEQVR4nO1Zu24UMRQ1WQIFRXiN70LoSJVv4BcoKXgIaKMg8Qmh4Aco06YI15ZWSATRUCBByAMtVBQIsZB7U9AQiUeChIQY5BVI+5idmZ3xzHgWH8mVPT7nHtvXd71CeHh4eHh4eFQBWPl0zDTxvwFa7yUouiORPgPyF4l876TmWTHpCDTPmWAl0g9QHPY2ifwTkFeaemdeTBoCTRekYg1IvwYDH2pIv0HxE0C6KGqNpXDKBAFIG4lBj26vA6Tr4ml4WNQqsWm+Bcid+JXmTnfcOGNdTpjQm9higpGKXw2t6r/dovhFwo746lzCDGISW5ZznSZfOJEwg4KFBvfpvE1jy01saO9uT3u0Ck2Yc4/fHTWTS6S3secb+YPUdLuIZFWZBkC+K5H24klpu4l0SeiwIYqGDhuGy3AmaNoz2nPzgTPnL1seyk0CBWVgm0LjbqI880YbsNoBYQHWhQohjLbCDYCUbeSES+GURL46ZKzmK6avNB1VGDDz4OPxhCt03YyZTAN02ABFm4nfIm1E3Sa1NwA03Uz7bbegccWAURiXSCp62TteKn54apXOmmpRKl7r76OtpPlKC9SaAQNXVG+ZPNvaPddnANLBxBkASN9GGVAGvwtHYGvgCKzlMaF2BoDixagkJRXt/70dFuf1myNF8VsHjCnABGdeg+Iytuk/3do5UwS/dUAGASY4idyONQG5LZbb00XwWwVkFbDcng40LXTf/5C+R9YBmhYK47cFsCQgqg7oVoMl8WeGTQGDdYC5MsvkL6sQOkhdCCnat83vggHbUXWACV4iP+qfjzZt81sHjCmgqehGXPbvN2f3mm1+64BxBXR/Dif+82PaeprH1foZIIQ4oTszgPw8phB6ZsYUxW8VkFVAGB4yz18RwV82fYXz2wLkFFD197kB3gCudAVqvwPqzi+qFlA1v6haQOn8kLKKc6V5A2wDHFhVvwNUBUcAHFjNSncCOBCEN0D5HRA6kww9PDw8PDw8xKTgD67yO4P7NiEEAAAAAElFTkSuQmCC" />
+        </defs>
       </svg>
     ),
-    color: "#18BFFF",
-    title: "Total Users",
-    value: "3.465",
-    growthRate: -0.95,
+    color: "#E2F0FF",
+    title: "BANK",
+    value: "30",
   },
 ];
 
 const DataStatsOne: React.FC<dataStats> = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {dataStatsList.map((item, index) => (
           <div
             key={index}
-            className="rounded-[10px] bg-white p-6 shadow-1 dark:bg-gray-dark"
+            className="grid grid-cols-2 bg-white dark:bg-gray-dark rounded-lg shadow-md p-6"
           >
             <div
-              className="flex h-14.5 w-14.5 items-center justify-center rounded-full"
+              className="w-16 h-16 flex items-center justify-center rounded-full"
               style={{ backgroundColor: item.color }}
             >
               {item.icon}
             </div>
 
-            <div className="mt-6 flex items-end justify-between">
-              <div>
-                <h4 className="mb-1.5 text-heading-6 font-bold text-dark dark:text-white">
-                  {item.value}
-                </h4>
-                <span className="text-body-sm font-medium">{item.title}</span>
-              </div>
-
-              <span
-                className={`flex items-center gap-1.5 text-body-sm font-medium ${
-                  item.growthRate > 0 ? "text-green" : "text-red"
-                }`}
-              >
-                {item.growthRate}%
-                {item.growthRate > 0 ? (
-                  <svg
-                    className="fill-current"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.35716 2.3925L0.908974 5.745L5.0443e-07 4.86125L5 -5.1656e-07L10 4.86125L9.09103 5.745L5.64284 2.3925L5.64284 10L4.35716 10L4.35716 2.3925Z"
-                      fill=""
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="fill-current"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.64284 7.6075L9.09102 4.255L10 5.13875L5 10L-8.98488e-07 5.13875L0.908973 4.255L4.35716 7.6075L4.35716 7.6183e-07L5.64284 9.86625e-07L5.64284 7.6075Z"
-                      fill=""
-                    />
-                  </svg>
-                )}
-              </span>
+            <div className="grid text-center items-center justify-center">
+              <h1 className="text-black text-lg font-bold dark:text-white">{item.title}</h1>
+              <p className="text-2xl font-bold text-blue mt-2 dark:text-white">{item.value}</p>
             </div>
+            
           </div>
+          
         ))}
       </div>
     </>

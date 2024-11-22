@@ -1,7 +1,20 @@
 "use client";
 import React, { useState } from "react";
 
-const SelectGroupOne: React.FC = () => {
+// Mendefinisikan tipe untuk setiap option
+interface Option {
+  value: string;
+  label: string;
+}
+
+// Mendefinisikan props yang diterima oleh komponen
+interface SelectGroupOneProps {
+  defaultLabel: string;
+  optionsLabel: string;
+  options: Option[]; // Tipe yang benar untuk `options`
+}
+
+const SelectGroupOne: React.FC<SelectGroupOneProps> = ({ defaultLabel, options, optionsLabel }) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
 
@@ -11,8 +24,8 @@ const SelectGroupOne: React.FC = () => {
 
   return (
     <div className="mb-4.5">
-      <label className="mb-3 block text-body-sm text-dark dark:text-white">
-        Subject
+      <label className="mb-3 block text-body-sm font-bold my-3 text-black dark:text-white">
+        {defaultLabel}
       </label>
 
       <div className="relative z-20 bg-transparent dark:bg-dark-2">
@@ -27,17 +40,19 @@ const SelectGroupOne: React.FC = () => {
           }`}
         >
           <option value="" disabled className="text-dark-6">
-            Select your subject
+            {optionsLabel}
           </option>
-          <option value="USA" className="text-dark-6">
-            USA
-          </option>
-          <option value="UK" className="text-dark-6">
-            UK
-          </option>
-          <option value="Canada" className="text-dark-6">
-            Canada
-          </option>
+
+          {/* Pengecekan sebelum memetakan opsi */}
+          {options && options.length > 0 ? (
+            options.map((option: Option) => (
+              <option key={option.value} value={option.value} className="text-dark-6">
+                {option.label}
+              </option>
+            ))
+          ) : (
+            <option disabled>No options available</option>
+          )}
         </select>
 
         <span className="absolute right-4 top-1/2 z-30 -translate-y-1/2">
